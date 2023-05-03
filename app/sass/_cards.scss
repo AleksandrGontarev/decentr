@@ -1,0 +1,117 @@
+.cards {
+    padding-top: 53px;
+
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -15px;
+        padding-bottom: 60px;
+    }
+
+    &__pic {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &__body {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: #0F4C92;
+        padding-bottom: 20px;
+    }
+
+    &__data {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1B1B1B;
+        padding-bottom: 40px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        color: #1B1B1B;
+        padding-bottom: 40px;
+    }
+
+    &__btn {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 16px 70px;
+        background-color: #0D599C;
+        border-radius: 95px;
+        border-style: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+background-color: #FF9728;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .cards {
+        padding-top: 100px;
+        padding-bottom: 20px;
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            margin: 0 -15px;
+            padding-bottom: 80px;
+        }
+
+        &__item:nth-of-type(2n) {
+            flex-direction: row-reverse;
+        }
+
+        &__pic {
+            width: 50%;
+            padding: 0 15px;
+        }
+
+        &__body {
+            width: 50%;
+            padding: 0 15px;
+            align-self: center;
+        }
+
+        &__header {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        &__data {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__btn {
+            text-transform: lowercase;
+        }
+
+        &__btn::first-letter {
+            text-transform: uppercase;
+        }
+
+    }
+}
