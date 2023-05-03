@@ -57,6 +57,30 @@
         </section>
         <div class="container">
             <section class="cards">
+                <div class="modal-book">
+                    <form class="modal__body" action="https://fom.in.ua/echo" method="post">
+                        <h2>Book a session with our specialist</h2>
+                        <fieldset>
+                            <input type="text" name="first-name" required placeholder="First name">
+                            <input type="text" name="last-name" required placeholder="Last name">
+                            <input type="email" name="work-email" required placeholder="Work email">
+                            <input type="tel" name="work-phone" required placeholder="Work phone">
+                            <select name="country" id="country" required>
+                                <option value="" selected>Country</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="usa">USA</option>
+                            </select>
+                            <input type="text" name="company-name" required placeholder="Company name">
+                            <select name="business-category" id="business-category" required>
+                                <option value="" selected>Business Category</option>
+                                <option value="business-category-first">business-category-first</option>
+                                <option value="business-category-second">business-category-second</option>
+                            </select>
+                        </fieldset>
+                        <input type="date" name="date" id="date" required placeholder="Selected the date">
+                        <button type="submit" value="send">Send</button>
+                    </form>
+                </div>
                 <article class="cards__item">
                     <img class="cards__pic" src="./img/cards/food.jpg" alt="food" width="370" height="358">
                     <div class="cards__body">
@@ -73,6 +97,7 @@
                             on consumers, while future-proofing advertising?</p>
                         <button class="cards__btn" type="button">Book a session</button>
                     </div>
+                    
                 </article>
                 <article class="cards__item">
                     <img class="cards__pic" src="./img/cards/pineaple.jpg" alt="pineaple" width="370" height="358">
