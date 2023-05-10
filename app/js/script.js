@@ -13,9 +13,9 @@ const butonModalBook = document.querySelectorAll('.cards__btn');
 const modalBook = document.querySelector('.modal-book');
 const body = document.querySelector('.body');
 
-butonModalBook.forEach((item) => (item.addEventListener('click', showModalBook())))
+butonModalBook.forEach((item) => (item.addEventListener('click', showModalBook)))
 
-modalBook.addEventListener('click', showModalBook())
+modalBook.addEventListener('click', showModalBook)
 
 function showModalBook() {
     modalBook.classList.toggle('show')

@@ -15,13 +15,9 @@ var butonModalBook = document.querySelectorAll('.cards__btn');
 var modalBook = document.querySelector('.modal-book');
 var body = document.querySelector('.body');
 butonModalBook.forEach(function (item) {
-  return item.addEventListener('click', function () {
-    showModalBook();
-  });
+  return item.addEventListener('click', showModalBook);
 });
-modalBook.addEventListener('click', function () {
-  showModalBook();
-});
+modalBook.addEventListener('click', showModalBook);
 function showModalBook() {
   modalBook.classList.toggle('show');
   body.classList.toggle('fixed');
